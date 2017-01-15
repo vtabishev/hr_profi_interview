@@ -1,0 +1,19 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <form id="send" method="post" action="/send">
+        <label for="searchQuery">
+            search query
+        </label>
+        <input id="searchQuery" type="text">
+
+        <label for="color">
+            color
+        </label>
+        <input type="text" id="color" name="color" />
+        <input id="btnSubmit" type="submit" value="Send">
+    </form>
+    <div id="table">
+
+    </div>
+{% endblock %}
