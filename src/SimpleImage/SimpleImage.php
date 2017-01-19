@@ -24,8 +24,6 @@ class SimpleImage
         if (!$this->image) {
             throw new Exception('error');
         }
-
-        $this->pixelsNumber = $this - $this->getWidth() * $this->getHeight();
     }
 
     /**

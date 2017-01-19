@@ -15,7 +15,7 @@ $app->get('/', function () use ($app) {
 });
 
 $app->post('/send', function (Request $request) use ($app) {
-    $imagesCount = 100;
+    $imagesCount = 20;
     $data = json_decode($request->getContent(), true);
 
     $imageSearcher = new ImageSearcher(new YandexImageSearcher());
